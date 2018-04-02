@@ -1,0 +1,476 @@
+﻿body {
+    margin: 0px;
+    background: #808080;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background: #0b000d;
+    border-bottom: 1px solid #c8c8c8;
+    align-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    background: url('../Images/black-cat-wallpaper-4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: top;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+footer {
+    width: 100%;
+    background: #0b000d;
+    border-top: 1px solid #c8c8c8;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: 'Curlz MT';
+    color: #c685e8;
+}
+
+h1, h2 {
+    padding: 10px 150px 10px 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    color: #c685e8;
+}
+
+p {
+    color: #c685e8;
+    margin-left: 60px;
+}
+
+.header-content {
+    position: relative;
+    grid-column-start: 1;
+}
+
+h2.header-content {
+    margin: 10px;
+    text-align: start;
+    padding: 0px;
+    width: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+tbody {
+    border-collapse: collapse;
+
+    border-spacing: 0px;
+
+    grid-gap: 0px;
+}
+
+tr, td {
+    margin: 10px;
+    height: 100px;
+    border-spacing: 0px;
+}
+
+.menu {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+img.menu {
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+    border: 0px;
+    background-color: #24002b;
+}
+
+li.menu {
+    margin: 0px;
+    background-color: transparent;
+    position: relative;
+    /*border-right: 1px solid #c8c8c8;*/
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    text-align: right;
+    align-content: center;
+    grid-template-columns: none;
+}
+
+    li.menu:nth-child(1) {
+        background: url(..\\Images\\Main.png) no-repeat;
+        background-size: contain;
+    }
+
+    li.menu:nth-child(2) {
+        background: url(..\\Images\\Cats.png) no-repeat;
+        background-size: contain;
+    }
+
+    li.menu:nth-child(3) {
+        background: url(..\\Images\\Game.png) no-repeat;
+        background-size: contain;
+        border-top: 2px solid #c685e8;
+        border-bottom: 2px solid #c685e8;
+    }
+
+    li.menu:nth-child(3) a.menu {
+        font-size: 42px;
+        font-weight: bold;
+    }
+
+    li.menu:nth-child(4) {
+        background: url(..\\Images\\Gallery.png) no-repeat;
+        background-size: contain;
+    }
+
+ul.menu {
+    padding: 0px;
+    margin-top: 4px;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-row-gap: 5px;
+}
+
+a.menu {
+    align-items: center;
+    text-align: right;
+    font-family: 'Curlz MT';
+    font-size: 30px;
+    font-variant: small-caps;
+    color: #c685e8;
+    text-decoration: none;
+    display: block;
+    padding-right: 10px;
+}
+
+div.menu {
+    width: 100%;
+    background: radial-gradient(rgba(16, 16, 16, 0.50), rgba(16, 16, 16, 0.80));
+    grid-template-columns: none;
+}
+
+
+
+#header-main {
+    display: grid;
+    grid-template-columns: 100px auto 410px;
+}
+
+#header-image {
+    display: inline;
+    height: 100px;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#header-text {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Curlz MT';
+    font-size: 50px;
+    font-variant: small-caps;
+    color: #c685e8;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+#panel {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#table-field {
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#field {
+    width: 800px;
+    height: 400px;
+}
+
+#animation {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#a1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 0px;
+    border: 12.5px solid #cc4a4a;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    animation: topLeft 4s infinite ease;
+    transform: translate(-10px, -10px);
+}
+
+#a2 {
+    width: 75px;
+    height: 75px;
+    border-radius: 32.5px;
+    border: 1px solid #e0c628;
+    position: absolute;
+    top: 138.5px;
+    left: 438.5px;
+    animation: topRight 4s infinite ease;
+    transform: translate(10px, -10px);
+}
+
+#a3 {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #56dc35;
+    border-radius: 32.5px;
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    animation: downLeft 4s infinite ease;
+    transform: translate(-10px, 10px);
+}
+
+#a4 {
+    width: 50px;
+    height: 50px;
+    border: 12.5px solid #66c8de;
+    position: absolute;
+    top: 238.5px;
+    left: 438.5px;
+    animation: downRight 4s infinite ease;
+    transform: translate(10px, 10px);
+}
+
+#a11 {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #66c8de;
+}
+
+#header-image {
+    display: inline;
+    height: 100px;
+    align-items: center;
+}
+
+#navigation {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #808080, #404040);
+    border-left: 2px solid #101010;
+    position: relative;
+}
+
+#menu {
+    background: linear-gradient(#0d0010, #24002b);
+    width: 200px;
+}
+
+#footer-text {
+    font-size: 48px;
+    font-family: 'Curlz MT';
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #c685e8;
+}
+
+@keyframes topLeft {
+    12.5% {
+        transform: rotate(45deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    37.5% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        width: 75px;
+        height: 75px;
+        border-radius: 32.5px;
+        border-width: 1px;
+        transform: translate(-10px, -10px);
+    }
+
+    62.5% {
+        transform: rotate(225deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    87.5% {
+        transform: rotate(315deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        width: 50px;
+        height: 50px;
+        border-radius: 0px;
+        border-width: 12.5px;
+        transform: translate(-10px, -10px);
+    }
+}
+
+@keyframes downRight {
+    12.5% {
+        transform: rotate(45deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    37.5% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        width: 75px;
+        height: 75px;
+        border-radius: 32.5px;
+        border-width: 1px;
+        transform: translate(10px, 10px);
+    }
+
+    62.5% {
+        transform: rotate(225deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    87.5% {
+        transform: rotate(315deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        width: 50px;
+        height: 50px;
+        border-radius: 0px;
+        border-width: 12.5px;
+        transform: translate(10px, 10px);
+    }
+}
+
+@keyframes downLeft {
+    12.5% {
+        transform: rotate(45deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    37.5% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        width: 50px;
+        height: 50px;
+        border-radius: 0px;
+        border-width: 12.5px;
+        transform: translate(-10px, 10px);
+    }
+
+    62.5% {
+        transform: rotate(225deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    87.5% {
+        transform: rotate(315deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        width: 75px;
+        height: 75px;
+        border-radius: 32.5px;
+        border-width: 1px;
+        transform: translate(-10px, 10px);
+    }
+}
+
+@keyframes topRight {
+    12.5% {
+        transform: rotate(45deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    37.5% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        width: 50px;
+        height: 50px;
+        border-radius: 0px;
+        border-width: 12.5px;
+        transform: translate(10px, -10px);
+    }
+
+    62.5% {
+        transform: rotate(225deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    87.5% {
+        transform: rotate(315deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        width: 75px;
+        height: 75px;
+        border-radius: 32.5px;
+        border-width: 1px;
+        transform: translate(10px, -10px);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

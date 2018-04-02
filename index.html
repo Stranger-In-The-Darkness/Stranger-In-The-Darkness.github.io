@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+
+<link rel="stylesheet" href="Styles\\index.css" />
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
+    <title></title>
+</head>
+<body onload="loadCatFact()">
+    <a name="top"></a>
+    <header>
+        <div class="header-content" id="header-main">
+            <img src="Images\\cat-hi.png" id="header-image" alt="Hi!" />
+
+            <h1 id="header-text">Catspurration of the day</h1>
+        </div>
+        <hr class="header-content" />
+
+        <div id="fact">
+            <h2 class="header-content">
+                Random cat fact:
+            </h2>
+            <div id="cat-fact">
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="menu">
+            <ul class="menu">
+                <li class="menu">
+                    <div class="menu">
+                        <a class="menu" href="#top" title="Main">
+                            Main
+                        </a>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="menu">
+                        <a class="menu" href="cats.html" title="Cats">
+                            Cats
+                        </a>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="menu">
+                        <a class="menu" href="game.html" title="Game">
+                            Game
+                        </a>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="menu">
+                        <a class="menu" href="gallery.html" title="Gallery">
+                            Gallery
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="panel">
+            <div id="main-panel">
+                <a name="programer"></a>
+                <div class="container" id="programer">
+                    <h2 class="div-h2">
+                        I'm a programer! What does that means may you ask?
+                    </h2>
+                    <div class="container-main" id="programer-main">
+                        <img src="Images\coffe.jpg" class="div-img" id="coffe" width="250" alt="I turn coffe into code" />
+                        <div class="div-text">
+                            Кофе, наверное одна из важнейших частей работы программиста)
+                            Во время бессонных ночей в поисках хитрого бага, в перерывах между обсуждеиями, и реализацией идей, ну и просто так, для взбодриться.
+                            Да и вообще, кофе - отличное средство, если нужно срочно взбодриться
+                        </div>
+                    </div>
+                    <button type="button" onclick="onBtnClick('first');" class="next-btn" id="first-button">
+                        <img src="Images\cat-coffe.png" width="200" id="cat-coffe-btn" alt="Cat with a coffe ^3^" />
+                    </button>
+                </div>
+
+                <a name="how"></a>
+                <div class="container" id="how">
+                    <h2 class="div-h2">
+                        How do I do that?
+                    </h2>
+                    <div class="container-main" id="how-main">
+                        <img src="Images\keep-calm.jpg" class="div-img" id="keep-calm" width="250" alt="Keep calm and code on" />
+                        <div class="div-text">
+                            Чем больше практики, тем легче найти решение.
+                            Мышление становиться всё более абстрактным, и переключиться с одного языка на другой становиться легче)
+                        </div>
+                    </div>
+                    <button type="button" onclick="onBtnClick('second');" class="next-btn" id="second-button">
+                        <img src="Images\cat-programer.png" width="200" id="cat-programer-btn" alt="Cat programer" />
+                    </button>
+                </div>
+
+                <a name="like-this"></a>
+                <div class="container" id="like-this">
+                    <h2 class="div-h2">
+                        Like this it looks like at most...
+                    </h2>
+                    <div class="container-main" id="like-this-main">
+                        <img src="Images\why-why-not.jpg" class="div-img" id="why-why-not" width="250" alt="It doesn't work...... why? It works...... why?" />
+                        <div class="div-text">
+                            Да. Именно так. Жестокая правда жизни.
+                            Большая часть времени уходит на исправку багов, отладку, и поиск ответа на вопрос всего бытия "Какого... ?!"
+                            Особенно если работать с чужим кодом...
+                        </div>
+                    </div>
+                    <button type="button" onclick="onBtnClick('third');" class="next-btn" id="third-button">
+                        <img src="Images\cat-shock.png" width="200" id="cat-shock-btn" alt="Shoked cat 0o0!" />
+                    </button>
+                </div>
+
+                <a name="what-about"></a>
+                <div class="container" id="what-about">
+                    <h2 class="div-h2">
+                        And what's with all the things others say about us? Well, it's
+                    </h2>
+                    <div class="container-main" id="what-about-main">
+                        <img src="Images\notFalse.jpg" class="div-img" id="not-false" width="250" alt="!False. It's funny because it's true" />
+                        <div class="div-text">
+                            В народе есть множество шуток про программистов, и многие из них не лишены доли правды.
+                            Но, к сожалению, требовать от frontend-разработчика починить кофемолку, потому, что "тыжпрограмист" - не самая удачная идея)
+                            Например:
+                            <br />
+                            <br />
+                            <blockquote>
+                                Если бы строители строили дома так, как программисты пишут код, то первый же дятел, присевший на фасад, уничтожил бы цивилизацию.
+                            </blockquote>
+                            Или вот:
+                            <blockquote>
+                                Самая сложная часть в дизайне… держаться подальше от фич.
+                            </blockquote>
+                            Или ещё вот)
+                            <blockquote>
+                                Это не баг — это незадокументированная фича.
+                            </blockquote>
+                        </div>
+                    </div>
+                    <button type="button" onclick="onBtnClick('end');" class="next-btn" id="bye-button">
+                        <img src="Images\cat-bye.png" class="next-btn" width="200" alt="Cat saying 'bye'!" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation">
+                <li class="navigation">
+                    <a href="#how" onmouseover="onNavBtnFocused('nav-btn-img-1')" onmouseout="onNavBtnUnfocused('first')">
+                        <img src="Images\cat-coffe.png" class="nav-btn" width="50" id="nav-btn-img-1" alt="Cat with a coffe ^3^" />
+                    </a>
+                </li>
+                <li class="navigation">
+                    <a href="#like-this" onmouseover="onNavBtnFocused('nav-btn-img-2')" onmouseout="onNavBtnUnfocused('second')">
+                        <img src="Images\cat-programer.png" class="nav-btn" width="50" id="nav-btn-img-2" alt="Cat programer" />
+                    </a>
+                </li>
+                <li class="navigation">
+                    <a href="#what-about" onmouseover="onNavBtnFocused('nav-btn-img-3')" onmouseout="onNavBtnUnfocused('third')">
+                        <img src="Images\cat-shock.png" class="nav-btn" width="50" id="nav-btn-img-3" alt="Schoked cat 0o0!" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <table align="center" id="footer-table">
+            <tr>
+                <td>
+                    <span id="footer-image">
+                        <img src="Images\cat-hi.png" id="header-image" alt="Hi!" />
+                    </span>
+                </td>
+                <td>
+                    <div id="footer-text">
+                        Sergey Sukharenko
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
+<script type="text/javascript" src="Scripts\index.js"></script>
+<script type="text/javascript" src="Scripts\cat-facts.js"></script>
+<script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { onStickyScroll() };
+
+    // Get the navbar
+    var navbar = document.getElementById("fact");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function onStickyScroll() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
