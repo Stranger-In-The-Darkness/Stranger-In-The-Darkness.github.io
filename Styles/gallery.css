@@ -1,6 +1,17 @@
 ﻿body {
     margin: 0px;
-    background: #808080;
+    padding: 0px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #808080;
+    background: url('../../Images/black-cat-wallpaper-4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: top;
 }
 
 header {
@@ -13,12 +24,9 @@ header {
 }
 
 main {
-    background: url('../../Images/black-cat-wallpaper-4.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position-y: top;
     display: grid;
     grid-template-columns: 200px auto;
+    height: auto;
 }
 
 footer {
@@ -272,8 +280,7 @@ div.menu {
     font-size: 50px;
     font-variant: small-caps;
     color: #c685e8;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column: span 2;
     margin: 0px;
     padding: 0px 10px;
 }
@@ -294,8 +301,31 @@ div.menu {
 
 #gallery-panel {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
     grid-column-gap: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    #gallery-panel {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #gallery-panel {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #gallery-panel {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #gallery-panel {
+        grid-template-columns: auto auto auto auto auto;
+    }
 }
 
 #footer-text {

@@ -212,6 +212,12 @@ div.article {
     color: #c8c8c8;
 }
 
+@media screen and (max-width: 980px) {
+    div.article {
+        font-size: 12px;
+    }
+}
+
 li.menu {
     margin: 0px;
     background-color: transparent;
