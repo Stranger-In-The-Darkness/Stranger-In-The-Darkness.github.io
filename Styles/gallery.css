@@ -71,9 +71,24 @@ h2.header-content {
 }
 
 img.gallery {
-    background-color: antiquewhite;
+    background-color: rgba(10, 10, 10, 0.7);
     object-fit: contain;
-    margin-top: 9px;
+    margin: 10px;
+}
+
+input.gallery {
+    grid-column-start: 2;
+    margin: 10px;
+    font-family: 'Curlz MT';
+    font-size: 30px;
+    color: #c685e8;
+    background: #0b000d;
+}
+
+input.gallery:hover {
+    background: #c685e8;
+    color: #0b000d;
+    font-weight: bold;
 }
 
 tr:not(.header), td:not(.header) {
@@ -227,6 +242,13 @@ div.menu {
 }
 
 
+.maximized {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 385px;
+    height: 385px;
+}
+
 
 #header-main {
     display: grid;
@@ -267,6 +289,13 @@ div.menu {
 #menu {
     background: linear-gradient(#0d0010, #24002b);
     width: 200px;
+    grid-row: span 2;
+}
+
+#gallery-panel {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 0px;
 }
 
 #footer-text {

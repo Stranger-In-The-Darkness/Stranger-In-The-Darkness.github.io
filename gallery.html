@@ -22,7 +22,7 @@
             <ul class="menu">
                 <li class="menu">
                     <div class="menu">
-                        <a class="menu" href="#top" title="Main">
+                        <a class="menu" href="index.html" title="Main">
                             Main
                         </a>
                     </div>
@@ -43,51 +43,17 @@
                 </li>
                 <li class="menu">
                     <div class="menu">
-                        <a class="menu" href="gallery.html" title="Gallery">
+                        <a class="menu" href="#top" title="Gallery">
                             Gallery
                         </a>
                     </div>
                 </li>
             </ul>
         </div>
-        <div id="panel">
-            <table>
-                <tbody>
-                    <tr>
-                        <td valign="top" align="center">
-                            <img src="Images\Pukh.png" id="im" class="gallery" width="650" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center">
-                            <img src="Images\Yakh.png" id="i1" class="gallery" width="150" height="150" onclick="onImgClick('i1')" />
-                            <img src="Images\Caaaats!\1.jpg" id="i2" class="gallery" width="150" height="150" onclick="onImgClick('i2')" />
-                            <img src="Images\Caaaats!\2.jpg" id="i3" class="gallery" width="150" height="150" onclick="onImgClick('i3')" />
-                            <img src="Images\Caaaats!\3.jpg" id="i4" class="gallery" width="150" height="150" onclick="onImgClick('i4')" />
-                            <img src="Images\Caaaats!\4.jpg" id="i5" class="gallery" width="150" height="150" onclick="onImgClick('i5')" />
-                            <img src="Images\Caaaats!\5.jpg" id="i6" class="gallery" width="150" height="150" onclick="onImgClick('i6')" />
-                            <img src="Images\Caaaats!\6.jpg" id="i7" class="gallery" width="150" height="150" onclick="onImgClick('i7')" />
-                            <img src="Images\Caaaats!\7.jpg" id="i8" class="gallery" width="150" height="150" onclick="onImgClick('i8')" />
-                            <img src="Images\Caaaats!\8.jpg" id="i9" class="gallery" width="150" height="150" onclick="onImgClick('i9')" />
-                            <img src="Images\Caaaats!\10.jpg" id="i10" class="gallery" width="150" height="150" onclick="onImgClick('i10')"/>
-                            <img src="Images\Caaaats!\11.jpg" id="i11" class="gallery" width="150" height="150" onclick="onImgClick('i11')"/>
-                            <img src="Images\Caaaats!\12.jpg" id="i12" class="gallery" width="150" height="150" onclick="onImgClick('i12')"/>
-                            <img src="Images\Caaaats!\13.jpg" id="i13" class="gallery" width="150" height="150" onclick="onImgClick('i13')"/>
-                            <img src="Images\Caaaats!\14.jpg" id="i14" class="gallery" width="150" height="150" onclick="onImgClick('i14')"/>
-                            <img src="Images\Caaaats!\15.jpg" id="i15" class="gallery" width="150" height="150" onclick="onImgClick('i15')"/>
-                            <img src="Images\Caaaats!\16.jpg" id="i16" class="gallery" width="150" height="150" onclick="onImgClick('i16')"/>
-                            <img src="Images\Caaaats!\17.jpg" id="i17" class="gallery" width="150" height="150" onclick="onImgClick('i17')"/>
-                            <img src="Images\Caaaats!\18.jpg" id="i18" class="gallery" width="150" height="150" onclick="onImgClick('i18')"/>
-                        </td>                                                                                   
-                    </tr>         
-                    <tr>
-                        <td align="center">
-                            <input class="gallery" type="button" value="Load more" alt="Load more" onclick="alert(loadCatFact(1))"/>
-                        </td>
-                    </tr>
-                </tbody>                                                                                        
-            </table>                                                                                            
+        <div id="gallery-panel">
         </div>
+
+        <input class="gallery" type="button" value="Load more" alt="Load more" onclick="loadNewImages()" />                                                                                          
     </main>
     <footer>
         <table align="left" id="footer-table">
@@ -105,14 +71,7 @@
             </tr>
         </table>
     </footer>
-    <script type="text/javascript">
-        function onImgClick(senderID) {
-            $('#im').attr('src', $('#' + senderID).attr('src'));
-        }
-
-        function loadNewImages() {
-            
-        }
-    </script>
+    <script type="text/javascript" src="Scripts/cat-image.js"></script>
+    <script type="text/javascript" src="Scripts/gallery.js"></script>
 </body>
 </html>
